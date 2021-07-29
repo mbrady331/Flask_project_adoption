@@ -10,7 +10,7 @@ from forms import AddForm, DelForm
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'mysecretkey'
+app.config['SECRET_KEY'] = 'yoursecretkey'
 
 #########################
 # SQL DATABASE SECTION ##
@@ -79,4 +79,4 @@ def del_pup():
     return render_template('delete.html', form=form)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
